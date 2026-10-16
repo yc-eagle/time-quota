@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#863bff" />
+    <meta
+      name="description"
+      content="时间额度支取器：把时间当作可随时支取的额度，而不是必须连续偿还的债务。支持分段支取、额度实时扣减、支取记录、中英文切换与本地持久化。"
+    />
+    <title>时间额度支取器 · Time Quota Tracker</title>
+    <script>
+      // 在首屏渲染前确定主题，避免闪烁
+      ;(function () {
+        try {
+          var saved = localStorage.getItem('time-quota:theme')
+          if (saved === 'dark' || saved === 'light') {
+            document.documentElement.dataset.theme = saved
+          } else {
+            document.documentElement.dataset.theme = window.matchMedia(
+              '(prefers-color-scheme: dark)',
+            ).matches
+              ? 'dark'
+              : 'light'
+          }
+        } catch (error) {
+          document.documentElement.dataset.theme = 'light'
+        }
+      })()
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

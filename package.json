@@ -1,0 +1,50 @@
+{
+  "name": "time-quota",
+  "private": true,
+  "version": "0.2.0",
+  "description": "时间额度支取器 — 把时间当作可随时支取的额度，而不是必须连续偿还的债务",
+  "type": "module",
+  "license": "MIT",
+  "author": "yc-eagle",
+  "homepage": "https://github.com/yc-eagle/time-quota#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yc-eagle/time-quota.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yc-eagle/time-quota/issues"
+  },
+  "keywords": [
+    "time-management",
+    "time-quota",
+    "pomodoro",
+    "react",
+    "typescript",
+    "vite"
+  ],
+  "engines": {
+    "node": ">=22.18.0"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview",
+    "lint": "oxlint",
+    "typecheck": "tsc -b",
+    "test": "node --test --experimental-strip-types \"src/**/*.test.ts\"",
+    "check": "npm run lint && npm run typecheck && npm run test && npm run build"
+  },
+  "dependencies": {
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8"
+  },
+  "devDependencies": {
+    "@types/node": "^24.13.3",
+    "@types/react": "^19.2.18",
+    "@types/react-dom": "^19.2.7",
+    "@vitejs/plugin-react": "^6.1.1",
+    "oxlint": "^1.81.0",
+    "typescript": "~6.0.2",
+    "vite": "^8.3.0"
+  }
+}
