@@ -143,11 +143,11 @@ export function BellOffIcon(props: IconProps) {
   )
 }
 
-export function InfoIcon(props: IconProps) {
+export function QuestionIcon(props: IconProps) {
   return (
     <Icon {...props}>
       <circle cx="12" cy="12" r="9" />
-      <path d="M12 11v5M12 8h.01" />
+      <path d="M9.5 9.2a2.6 2.6 0 1 1 3.4 2.5c-.6.2-.9.8-.9 1.4v.4M12 17h.01" />
     </Icon>
   )
 }

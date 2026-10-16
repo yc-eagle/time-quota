@@ -5,8 +5,8 @@ import {
   BellIcon,
   BellOffIcon,
   BoltIcon,
-  InfoIcon,
   MoonIcon,
+  QuestionIcon,
   SoundOffIcon,
   SoundOnIcon,
   SunIcon,
@@ -77,7 +77,7 @@ export function Header({
           {notifyEnabled ? <BellIcon /> : <BellOffIcon />}
         </button>
         <button type="button" className="icon-btn" onClick={onOpenHelp} title={t('help')} aria-label={t('help')}>
-          <InfoIcon />
+          <QuestionIcon />
         </button>
       </div>
     </header>
