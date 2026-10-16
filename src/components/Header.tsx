@@ -39,7 +39,7 @@ export function Header({
         <span className="brand-mark" aria-hidden="true">
           <BoltIcon width={22} height={22} />
         </span>
-        <div>
+        <div className="brand-text">
           <h1 className="brand-title">{t('appName')}</h1>
           <p className="brand-tagline">{t('tagline')}</p>
         </div>

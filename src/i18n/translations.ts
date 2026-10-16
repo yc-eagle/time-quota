@@ -7,7 +7,7 @@ export type Language = 'zh' | 'en'
 
 const zh = {
   appName: '时间额度支取器',
-  tagline: '把时间当作可随时支取的额度，而不是必须连续偿还的债务',
+  tagline: '把时间划成额度，随取随用，不用一次做完。',
   footerNote: '所有数据只保存在你的浏览器本地（localStorage），不会上传到任何服务器。',
 
   // 计时面板
@@ -134,7 +134,7 @@ export type TranslationKey = keyof typeof zh
 
 const en: Record<TranslationKey, string> = {
   appName: 'Time Quota Tracker',
-  tagline: 'Treat time as withdrawable quota, not debt you must repay in a row',
+  tagline: 'Set aside time as a quota — withdraw it in slices, whenever you like.',
   footerNote: 'Everything is stored locally in your browser (localStorage). Nothing is uploaded.',
 
   timerIdle: 'Ready to withdraw',
